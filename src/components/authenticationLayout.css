@@ -1,0 +1,11 @@
+.auth-layout {
+	@apply flex justify-center items-center w-full;
+}
+
+.auth-card {
+	@apply w-full md:w-2/5 flex justify-center items-center flex-col gap-2;
+}
+
+.auth-logo {
+	@apply h-40 py-4;
+}

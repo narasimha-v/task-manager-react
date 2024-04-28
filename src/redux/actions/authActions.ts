@@ -25,8 +25,8 @@ export const signUp =
 export const signIn =
 	(email: string, password: string): AppThunk =>
 	async (dispatch, getState, { api, persistStore }) => {
-		await networkCallWithReduxState(dispatch, 'auth.login', async () => {
-			const res = await api.post('/auth/signIn', {
+		await networkCallWithReduxState(dispatch, 'auth.signIn', async () => {
+			const res = await api.post('/auth/sign-in', {
 				email,
 				password
 			});
