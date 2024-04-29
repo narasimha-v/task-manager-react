@@ -32,7 +32,9 @@ yarn dev
 
 ## Production URL
 
-[Task manager]()
+[Task manager](https://task-manager-react-46u2.onrender.com)
+
+- Please note: Since it's deployed on a free instance, there will be a cold start during first access of the application causing a 30-50 second delay.
 
 ## License
 
