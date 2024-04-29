@@ -5,7 +5,7 @@ import { ReduxState, createStore } from '../redux';
 export let store: Store;
 export const rdxPersist = new RDXPersist<ReduxState>([], []);
 
-rdxPersist.keysToPersist = ['auth'];
+rdxPersist.keysToPersist = ['auth', 'tasks'];
 
 const persistStore = (state: ReduxState) => {
 	rdxPersist.persist(state);

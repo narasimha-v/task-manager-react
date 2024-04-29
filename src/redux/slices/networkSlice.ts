@@ -27,5 +27,5 @@ const networkSlice = createSlice({
 	}
 });
 
-export const networkReducer = networkSlice.reducer;
-export const networkActions = networkSlice.actions;
+export const { reducer: networkReducer, actions: networkActions } =
+	networkSlice;

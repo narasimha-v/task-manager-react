@@ -1,5 +1,5 @@
 import { networkActions } from '../slices';
-import { AppDispatch } from '../store';
+import { AppDispatch } from '../types';
 import { NetworkErrorMsg } from './networkErrorMessage';
 
 export const networkCallWithReduxState = async (

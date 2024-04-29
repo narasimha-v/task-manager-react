@@ -17,7 +17,7 @@ export const Navbar = () => {
 				{isAuthenticated ? (
 					<>
 						<Link to='/dashboard'>Dashboard</Link>
-						<Link to='/task-create'>Create Task</Link>
+						<Link to='/task/create'>Create Task</Link>
 						<button
 							className='px-0 inline-block hover:text-black'
 							onClick={() => dispatch(signOut())}

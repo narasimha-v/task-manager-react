@@ -2,11 +2,17 @@ import { Action, combineReducers, configureStore } from '@reduxjs/toolkit';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 import api from './api';
 import { IS_PRODUCTION } from './getEnv';
-import { authActions, authReducer, networkReducer } from './slices';
+import {
+	authActions,
+	authReducer,
+	networkReducer,
+	tasksReducer
+} from './slices';
 import { AppDispatch, ReduxState } from './types';
 
 export const appReducer = combineReducers({
 	auth: authReducer,
+	tasks: tasksReducer,
 	network: networkReducer
 });
 
